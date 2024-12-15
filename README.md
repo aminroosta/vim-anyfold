@@ -155,6 +155,7 @@ Option | Values | Default value |  Description
 `anyfold_fold_toplevel` | 0, 1 | 0 | Fold subsequent unindented lines
 `anyfold_fold_size_str` | string | '%s lines' | Format of fold size string in minimalistic display
 `anyfold_fold_level_str` | string | ' + ' | Format of fold level string in minimalistic display
+anyfold_fold_fillchar  | string | ' ' | Fold fill character
 
 ## Complementary plugins
 

@@ -102,6 +102,7 @@ g:anyfold_comments          | list of strings | ['comment', 'string'] |
 g:anyfold_fold_toplevel     | 0, 1            | 0 (= 'off') |
 g:anyfold_fold_size_str     | string          | '%s lines'  | Format of fold size string in minimalistic display
 g:anyfold_fold_level_str    | string          | ' + '       | Format of fold level string in minimalistic display
+g:anyfold_fold_fillchar     | string          | ' '         | Fold fill character
 
                                                                 *anyfoldLoaded*
 For expert configuration, anyfold triggers an |autocmd-event| `anyfoldLoaded`
