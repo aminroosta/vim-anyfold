@@ -666,8 +666,8 @@ function! MinimalFoldText() abort
     let foldSizeStr = " " . substitute(g:anyfold_fold_size_str, "%s", string(foldSize), "g") . " "
     let foldLevelStr = repeat(g:anyfold_fold_level_str, v:foldlevel)
     let lineCount = line("$")
-    let expansionString = repeat(g:anyfold_fold_fillchar, w - strwidth(foldSizeStr.line.foldLevelStr))
-    return line . expansionString . foldSizeStr . foldLevelStr
+    let expansionString = repeat(g:anyfold_fold_fillchar, w - strwidth(foldSizeStr.line." ".foldLevelStr))
+    return line . " " . expansionString . foldSizeStr . foldLevelStr
 endfunction
 
 "----------------------------------------------------------------------------/
